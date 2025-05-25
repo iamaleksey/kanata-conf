@@ -8,7 +8,7 @@
 )
 
 (deflayer colemak
-  _        brdn     brup     mctl     sls      dtn      dnd      prev     pp       next     mute     vold     volu
+  _        brdn     brup     mctl     sls      dtn      dnd      ◀◀       ▶⏸       ▶▶       mute     vold     volu
   _        _        _        _        _        _        _        _        _        _        _        _        _        _
   _        q        w        f        p        b        j        l        u        y        ;        _        _        _
   @esc_ext @ctl_a   @alt_r   @met_s   @sft_t   g        m        @sft_n   @met_e   @alt_i   @ctl_o   _        _
@@ -17,7 +17,7 @@
 )
 
 (deflayer qwerty
-  _        brdn     brup     mctl     sls      dtn      dnd      prev     pp       next     mute     vold     volu
+  _        brdn     brup     mctl     sls      dtn      dnd      ◀◀       ▶⏸       ▶▶       mute     vold     volu
   _        _        _        _        _        _        _        _        _        _        _        _        _        _
   _        _        _        _        _        _        _        _        _        _        _        _        _        _
   _        _        _        _        _        _        _        _        _        _        _        _        _
@@ -38,8 +38,8 @@
   _        _        _        _        _        _        _        _        _        _        _        _        _
   _        _        _        _        _        _        _        _        _        _        _        _        _        _
   _        1        2        3        4        5        6        7        8        9        0        _        _        _
-  S-`      S-1      +        S-9      S-0      S-7      S-bksl   -        =        S--      S-8      _        _
-  S-4      S-2      {        }        S-3      _        `        [        ]        S-5      S-6      _        _
+  @~       @!       +        S-9      S-0      @&       @|       -        =        @_       @*       _        _
+  @$       @@       {        }        @#       _        `        [        ]        @%       @^       _        _
   _        _        _        _                          _                          _        _        _        _        _
 )
 
@@ -48,7 +48,7 @@
   _        _        _        _        _        _        _        _        _        _        _        _        _        _
   _        _        _        _        _        _        pgup     @prv_wrd up       @nxt_wrd @del_lne bspc     _        _
   _        lctl     lalt     lmet     lsft     caps     pgdn     left     down     rght     del      bspc     _
-  @undo    @cut     @copy    _        @paste   _        _        @lne_beg _        @lne_end _        _        _
+  _        _        _        _        _        _        _        @lne_beg _        @lne_end _        _        _
   _        _        _        _                          _                          _        _        _        _        _
 )
 
@@ -77,36 +77,45 @@
 )
 
 (defalias
+  ;; symbols
+  ~ S-`
+  ! S-1
+  @ S-2
+  # S-3
+  $ S-4
+  % S-5
+  ^ S-6
+  & S-7
+  * S-8
+  _ S--
+  + S-=
+  | S-\
+)
+
+(defalias
   ;; extend layer aliases
-  undo  M-z
-  redo  M-S-z
-
-  cut   M-x
-  copy  M-c
-  paste M-v
-
   prv_wrd A-left
   nxt_wrd A-right
-
   lne_beg M-left
   lne_end M-right
   del_lne M-bspc
 )
 
 (defalias
-  hyper C-A-M-lsft
+  lhpr C-A-M-lsft
+  rhpr RC-RA-RM-rsft
 
   ;; colemak-dh home row mods
   ctl_a (tap-hold-release $tt $ht a lctl)
   alt_r (tap-hold-release $tt $ht r lalt)
   met_s (tap-hold-release $tt $ht s lmet)
   sft_t (tap-hold-release $tt $ht t lsft)
-  hpr_d (tap-hold-release $tt $ht d @hyper)
+  hpr_d (tap-hold-release $tt $ht d @lhpr)
 
-  hpr_h (tap-hold-release $tt $ht h @hyper)
+  hpr_h (tap-hold-release $tt $ht h @rhpr)
   sft_n (tap-hold-release $tt $ht n rsft)
   met_e (tap-hold-release $tt $ht e rmet)
-  alt_i (tap-hold-release $tt $ht i lalt)
+  alt_i (tap-hold-release $tt $ht i ralt)
   ctl_o (tap-hold-release $tt $ht o rctl)
 )
 
