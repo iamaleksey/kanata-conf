@@ -1,0 +1,118 @@
+(defsrc
+  esc      f1       f2       f3       f4       f5       f6       f7       f8       f9       f10      f11      f12
+  grv      1        2        3        4        5        6        7        8        9        0        -        =        bspc
+  tab      q        w        e        r        t        y        u        i        o        p        [        ]        \
+  caps     a        s        d        f        g        h        j        k        l        ;        '        ret
+  lsft     z        x        c        v        b        n        m        ,        .        /        rsft     up
+  fn       lctl     lalt     lmet                       spc                        rmet     ralt     left     down     rght
+)
+
+(deflayer colemak
+  _        brdn     brup     mctl     sls      dtn      dnd      prev     pp       next     mute     vold     volu
+  _        _        _        _        _        _        _        _        _        _        _        _        _        _
+  _        q        w        f        p        b        j        l        u        y        ;        _        _        _
+  @esc_ext @ctl_a   @alt_r   @met_s   @sft_t   g        m        @sft_n   @met_e   @alt_i   @ctl_o   _        _
+  z        x        c        @hpr_d   v        XX       k        @hpr_h   _        _        _        _        _
+  @adj     _        _        @tab_sym                   _                          @bsp_ext _        _        _        _
+)
+
+(deflayer qwerty
+  _        brdn     brup     mctl     sls      dtn      dnd      prev     pp       next     mute     vold     volu
+  _        _        _        _        _        _        _        _        _        _        _        _        _        _
+  _        _        _        _        _        _        _        _        _        _        _        _        _        _
+  _        _        _        _        _        _        _        _        _        _        _        _        _
+  _        _        _        _        _        _        _        _        _        _        _        _        _
+  @fn      _        _        _                          _                          _        _        _        _        _
+)
+
+(deflayer function
+  _        f1       f2       f3       f4       f5       f6       f7       f8       f9       f10      f11      f12
+  _        _        _        _        _        _        _        _        _        _        _        _        _        _
+  _        _        _        _        _        _        _        _        _        _        _        _        _        _
+  _        _        _        _        _        _        _        @colemak _        _        _        _        _
+  _        _        _        _        _        _        _        _        _        _        _        _        _
+  _        _        _        _                          _                          _        _        _        _        _
+)
+
+(deflayer symbol
+  _        _        _        _        _        _        _        _        _        _        _        _        _
+  _        _        _        _        _        _        _        _        _        _        _        _        _        _
+  _        1        2        3        4        5        6        7        8        9        0        _        _        _
+  S-`      S-1      +        S-9      S-0      S-7      S-bksl   -        =        S--      S-8      _        _
+  S-4      S-2      {        }        S-3      _        `        [        ]        S-5      S-6      _        _
+  _        _        _        _                          _                          _        _        _        _        _
+)
+
+(deflayer extend
+  _        _        _        _        _        _        _        _        _        _        _        _        _
+  _        _        _        _        _        _        _        _        _        _        _        _        _        _
+  _        _        _        _        _        _        pgup     @prv_wrd up       @nxt_wrd @del_lne bspc     _        _
+  _        lctl     lalt     lmet     lsft     caps     pgdn     left     down     rght     del      bspc     _
+  @undo    @cut     @copy    _        @paste   _        _        @lne_beg _        @lne_end _        _        _
+  _        _        _        _                          _                          _        _        _        _        _
+)
+
+(deflayer adjust
+  _        _        _        _        _        _        _        _        _        _        _        _        _
+  _        _        _        _        _        _        _        _        _        _        _        _        _        _
+  _        f1       f2       f3       f4       f5       f6       f7       f8       f9       f10      _        _        _
+  _        _        _        _        _        _        _        _        @qwerty  _        f11      _        _
+  _        _        _        _        _        _        _        _        _        _        f12      _        _
+  _        _        _        _                          _                          _        _        _        _        _
+)
+
+(defalias
+  ;; layers
+  colemak (layer-switch colemak)
+  qwerty  (layer-switch qwerty)
+
+  fn  (layer-toggle function)
+  ext (layer-toggle extend)
+  sym (layer-toggle symbol)
+  adj (layer-toggle adjust)
+
+  tab_sym (tap-hold-press $tt $ht tab  @sym)
+  esc_ext (tap-hold-press $tt $ht esc  @ext)
+  bsp_ext (tap-hold-press $tt $ht bspc @ext)
+)
+
+(defalias
+  ;; extend layer aliases
+  undo  M-z
+  redo  M-S-z
+
+  cut   M-x
+  copy  M-c
+  paste M-v
+
+  prv_wrd A-left
+  nxt_wrd A-right
+
+  lne_beg M-left
+  lne_end M-right
+  del_lne M-bspc
+)
+
+(defalias
+  hyper C-A-M-lsft
+
+  ;; colemak-dh home row mods
+  ctl_a (tap-hold-release $tt $ht a lctl)
+  alt_r (tap-hold-release $tt $ht r lalt)
+  met_s (tap-hold-release $tt $ht s lmet)
+  sft_t (tap-hold-release $tt $ht t lsft)
+  hpr_d (tap-hold-release $tt $ht d @hyper)
+
+  hpr_h (tap-hold-release $tt $ht h @hyper)
+  sft_n (tap-hold-release $tt $ht n rsft)
+  met_e (tap-hold-release $tt $ht e rmet)
+  alt_i (tap-hold-release $tt $ht i lalt)
+  ctl_o (tap-hold-release $tt $ht o rctl)
+)
+
+(defvar
+  tap-timeout  175
+  hold-timeout 175
+  tt $tap-timeout
+  ht $hold-timeout
+)
