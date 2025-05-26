@@ -25,7 +25,7 @@
   _        _        _        _        _        _        _        _        _        _        _        _        _        _
   _        q        w        f        p        b        j        l        u        y        ;        _        _        _
   @esc_ext @ctl_a   @alt_r   @met_s   @sft_t   g        m        @sft_n   @met_e   @alt_i   @ctl_o   _        _
-  z        x        c        @hpr_d   v        XX       k        @hpr_h   _        _        _        _        _
+  z        x        c        @hpr_d   v        XX       k        @hpr_h   _        _        _        @cw      _
   @adj     _        _        @tab_sym                   _                          @bsp_ext _        _        _        _
 )
 
@@ -115,10 +115,10 @@
 )
 
 (defalias
+  ;; colemak-dh home row mods
   lhpr (multi lctl lalt lmet lsft)
   rhpr (multi rctl ralt rmet rsft)
 
-  ;; colemak-dh home row mods
   ctl_a (tap-hold-release $tt $ht a lctl)
   alt_r (tap-hold-release $tt $ht r lalt)
   met_s (tap-hold-release $tt $ht s lmet)
@@ -130,6 +130,8 @@
   met_e (tap-hold-release $tt $ht e rmet)
   alt_i (tap-hold-release $tt $ht i ralt)
   ctl_o (tap-hold-release $tt $ht o rctl)
+
+  cw (caps-word 2000)
 )
 
 (defvar
