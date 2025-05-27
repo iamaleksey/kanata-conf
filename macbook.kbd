@@ -23,7 +23,7 @@
 (deflayer colemak
   _        brdn     brup     mctl     sls      dtn      dnd      ◀◀       ▶⏸       ▶▶       mute     vold     volu
   _        _        _        _        _        _        _        _        _        _        _        _        _        _
-  _        q        w        f        p        b        j        l        u        y        ;        _        _        _
+  _        q        w        f        p        b        j        l        u        y        ;        \        XX       XX
   @esc_ext @ctl_a   @alt_r   @met_s   @sft_t   g        m        @sft_n   @met_e   @alt_i   @ctl_o   _        _
   z        x        c        @hpr_d   v        XX       k        @hpr_h   _        _        _        @cw      _
   @adj     _        _        @tab_sym                   _                          @bsp_ext _        _        _        _
