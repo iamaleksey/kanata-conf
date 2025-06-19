@@ -24,9 +24,9 @@
   _        brdn     brup     mctl     sls      dtn      dnd      ◀◀       ▶⏸       ▶▶       mute     vold     volu
   _        _        _        _        _        _        _        _        _        _        _        _        _        _
   _        q        w        f        p        b        j        l        u        y        ;        \        XX       XX
-  @esc_ext @ctl_a   @alt_r   @met_s   @sft_t   g        m        @sft_n   @met_e   @alt_i   @ctl_o   @'_sym   _
+  @esc_nav @ctl_a   @alt_r   @met_s   @sft_t   g        m        @sft_n   @met_e   @alt_i   @ctl_o   @'_sym   _
   z        x        c        @hpr_d   v        XX       k        @hpr_h   _        _        _        @cw      _
-  @adj     _        _        @tab_num                   @spc_sym                   @bsp_ext _        _        _        _
+  @sys     _        _        @tab_num                   @spc_sym                   @bsp_nav _        _        _        _
 )
 
 (deflayer qwerty
@@ -35,25 +35,25 @@
   _        _        _        _        _        _        _        _        _        _        _        _        _        _
   _        _        _        _        _        _        _        _        _        _        _        _        _
   _        _        _        _        _        _        _        _        _        _        _        _        _
-  @adj     _        _        _                          _                          _        _        _        _        _
+  @sys     _        _        _                          _                          _        _        _        _        _
 )
 
-(deflayer symbol
+(deflayer sym
   _        _        _        _        _        _        _        _        _        _        _        _        _
   _        XX       XX       XX       XX       XX       XX       XX       XX       XX       XX       XX       _        _
   _        @~       @^       @&       @|       XX       XX       @#       ;        @$       \        XX       _        _
   _        @!       [        S-9      @{       XX       XX       -        =        @_       @*       XX       _
   @%       ]        S-0      @}       XX       XX       XX       +        @@       S-'      `        XX       _
-  _        _        _        _                          _                          @adj     _        _        _        _
+  _        _        _        _                          _                          @sys     _        _        _        _
 )
 
-(deflayer extend
+(deflayer nav
   _        _        _        _        _        _        _        _        _        _        _        _        _
   _        _        _        _        _        _        _        _        _        _        _        _        _        _
   _        _        _        _        _        _        pgup     home     up       end      _        _        _        _
   _        lctl     lalt     lmet     lsft     _        pgdn     left     down     rght     _        _        _
   _        _        _        _        _        _        _        _        _        _        _        _        _
-  _        _        _        @adj                       _                          _        _        _        _        _
+  _        _        _        @sys                       _                          _        _        _        _        _
 )
 
 (deflayer num
@@ -65,7 +65,7 @@
   _        _        _        _                          _                          0        _        _        _        _
 )
 
-(deflayer adjust
+(deflayer sys
   _        f1       f2       f3       f4       f5       f6       f7       f8       f9       f10      f11      f12
   _        _        _        _        _        _        _        _        _        _        _        _        _        _
   _        _        vold     mute     volu     _        _        _        _        _        _        _        _        _
@@ -79,16 +79,16 @@
   colemak (layer-switch colemak)
   qwerty  (layer-switch qwerty)
 
-  ext (layer-toggle extend)
+  nav (layer-toggle nav)
   num (layer-toggle num)
-  sym (layer-toggle symbol)
-  adj (layer-toggle adjust)
+  sym (layer-toggle sym)
+  sys (layer-toggle sys)
 
   '_sym   (tap-hold-press $tt $ht '    @sym)
   spc_sym (tap-hold-press $tt $ht spc  @sym)
   tab_num (tap-hold-press $tt $ht tab  @num)
-  esc_ext (tap-hold-press $tt $ht esc  @ext)
-  bsp_ext (tap-hold-press $tt $ht bspc @ext)
+  esc_nav (tap-hold-press $tt $ht esc  @nav)
+  bsp_nav (tap-hold-press $tt $ht bspc @nav)
 )
 
 (defalias
