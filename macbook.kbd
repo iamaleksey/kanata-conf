@@ -41,9 +41,9 @@
 (deflayer sym
   _        _        _        _        _        _        _        _        _        _        _        _        _
   _        XX       XX       XX       XX       XX       XX       XX       XX       XX       XX       XX       _        _
-  _        @~       @^       @&       @|       XX       XX       @#       ;        @$       \        XX       _        _
-  _        @!       [        S-9      @{       XX       XX       -        =        @_       @*       XX       _
-  @%       ]        S-0      @}       XX       XX       XX       +        @@       S-'      `        XX       _
+  _        @~       @^       @&       @|       XX       XX       S-'      @@       @$       @:       XX       _        _
+  _        @!       +        S-9      S-0      XX       XX       -        =        @_       @*       XX       _
+  @%       @#       @{       @}       XX       XX       XX       [        ]        `        \        XX       _
   _        _        _        _                          _                          @sys     _        _        _        _
 )
 
@@ -104,6 +104,7 @@
   * S-8
   _ S--
   + S-=
+  : S-;
   { S-[
   } S-]
   | S-\
