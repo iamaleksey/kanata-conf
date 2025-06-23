@@ -53,7 +53,7 @@
   _        _        _        _        _        _        pgup     home     up       end      _        _        _        _
   _        lctl     lalt     lmet     lsft     _        pgdn     left     down     rght     _        _        _
   _        _        _        _        _        _        _        _        _        _        _        _        _
-  _        _        _        @sys                       _                          _        _        _        _        _
+  _        _        _        _                          @sys                       _        _        _        _        _
 )
 
 (deflayer num
