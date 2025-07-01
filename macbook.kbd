@@ -29,15 +29,6 @@
   @sys     _        _        @tab_num                   @spc_sym                   @bsp_nav _        _        _        _
 )
 
-(deflayer qwerty
-  _        brdn     brup     mctl     sls      dtn      dnd      ◀◀       ▶⏸       ▶▶       mute     vold     volu
-  _        _        _        _        _        _        _        _        _        _        _        _        _        _
-  _        _        _        _        _        _        _        _        _        _        _        _        _        _
-  _        _        _        _        _        _        _        _        _        _        _        _        _
-  _        _        _        _        _        _        _        _        _        _        _        _        _
-  @sys     _        _        _                          _                          _        _        _        _        _
-)
-
 (deflayer sym
   _        _        _        _        _        _        _        _        _        _        _        _        _
   _        XX       XX       XX       XX       XX       XX       XX       XX       XX       XX       XX       _        _
@@ -58,10 +49,10 @@
 
 (deflayer num
   _        _        _        _        _        _        _        _        _        _        _        _        _
-  _        _        _        _        _        _        _        _        _        _        _        _        _        _
-  _        f1       f2       f3       f4       _        0        1        2        3        _        _        _        _
-  _        f5       f6       f7       f8       _        _        4        5        6        _        _        _
-  f9       f10      f11      f12      XX       _        _        7        8        9        0        _        _
+  _        XX       XX       XX       XX       XX       XX       XX       XX       XX       XX       XX       _        _
+  _        f1       f2       f3       f4       XX       0        1        2        3        XX       XX       _        _
+  _        f5       f6       f7       f8       XX       XX       4        5        6        XX       XX       _
+  f9       f10      f11      f12      XX       XX       XX       7        8        9        0        XX       _
   _        _        _        _                          _                          _        _        _        _        _
 )
 
@@ -69,9 +60,18 @@
   _        f1       f2       f3       f4       f5       f6       f7       f8       f9       f10      f11      f12
   _        _        _        _        _        _        _        _        _        _        _        _        _        _
   _        _        vold     mute     volu     _        _        _        _        _        _        _        _        _
-  _        _        ◀◀       ▶⏸       ▶▶       _        _        @colemak @qwerty  _        _        _        _
-  lrld     _        _        _        _        _        _        _        _        _        _        _        _
+  _        _        ◀◀       ▶⏸       ▶▶       _        _        _        _        _        _        _        _
+  lrld     _        @colemak XX       @qwerty  _        _        _        _        _        _        _        _
   _        _        _        _                          _                          _        _        _        _        _
+)
+
+(deflayer qwerty
+  _        brdn     brup     mctl     sls      dtn      dnd      ◀◀       ▶⏸       ▶▶       mute     vold     volu
+  _        _        _        _        _        _        _        _        _        _        _        _        _        _
+  _        _        _        _        _        _        _        _        _        _        _        _        _        _
+  _        _        _        _        _        _        _        _        _        _        _        _        _
+  _        _        _        _        _        _        _        _        _        _        _        _        _
+  @sys     _        _        _                          _                          _        _        _        _        _
 )
 
 (defalias
