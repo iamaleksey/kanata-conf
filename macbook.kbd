@@ -35,7 +35,7 @@
   _        @~       @^       @&       @|       XX       XX       S-'      @@       @$       @:       XX       _        _
   _        @!       +        S-9      S-0      XX       XX       -        =        @_       @*       XX       _
   @%       @#       @{       @}       XX       XX       XX       [        ]        `        \        XX       _
-  _        _        _        _                          _                          @sys     _        _        _        _
+  _        _        _        _                          _                          _        _        _        _        _
 )
 
 (deflayer nav
@@ -44,7 +44,7 @@
   _        _        _        _        _        _        _        pgup     up       pgdn     home     _        _        _
   _        lctl     lalt     lmet     lsft     _        _        left     down     rght     end      _        _
   _        _        _        _        _        _        _        _        _        _        _        _        _
-  _        _        _        _                          @sys                       _        _        _        _        _
+  _        _        _        @sys                       _                          _        _        _        _        _
 )
 
 (deflayer num
@@ -53,7 +53,7 @@
   _        f1       f2       f3       f4       XX       0        1        2        3        XX       XX       _        _
   _        f5       f6       f7       f8       XX       XX       4        5        6        XX       XX       _
   f9       f10      f11      f12      XX       XX       XX       7        8        9        0        XX       _
-  _        _        _        _                          _                          _        _        _        _        _
+  _        _        _        _                          _                          @sys     _        _        _        _
 )
 
 (deflayer sys
