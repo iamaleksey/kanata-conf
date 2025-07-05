@@ -25,16 +25,16 @@
   _        _        _        _        _        _        _        _        _        _        _        _        _        _
   _        q        w        f        p        b        j        l        u        y        ;        \        XX       XX
   @esc_nav @ctl_a   @alt_r   @met_s   @sft_t   g        m        @sft_n   @met_e   @alt_i   @ctl_o   @'_sym   _
-  z        x        c        @hpr_d   v        XX       k        @hpr_h   _        _        _        @cw      _
-  @sys     _        _        @tab_num                   @spc_sym                   @bsp_nav _        _        _        _
+           z        x        c        @hpr_d   v   XX   k        @hpr_h   _        _        _        @cw      _
+  _        _        _        @tab_num                   @spc_sym                   @bsp_nav _        _        _        _
 )
 
 (deflayer sym
   _        _        _        _        _        _        _        _        _        _        _        _        _
   _        XX       XX       XX       XX       XX       XX       XX       XX       XX       XX       XX       _        _
-  _        @~       @^       @&       @|       XX       XX       @_       @@       @$       @:       XX       _        _
-  _        @*       +        S-9      S-0      XX       XX       -        =        @!       S-'      XX       _
-  @%       @#       @{       @}       XX       XX       XX       [        ]        `        \        XX       _
+  _        @~       @^       @&       @|       XX       XX       @_       @!       @$       @:       XX       _        _
+  _        @@       @*       S-9      S-0      XX       XX       -        =        +        S-'      XX       _
+           @#       @%       @{       @}       XX  XX   XX       [        ]        `        \        XX       _
   _        _        _        _                          _                          _        _        _        _        _
 )
 
@@ -50,18 +50,18 @@
 (deflayer num
   _        _        _        _        _        _        _        _        _        _        _        _        _
   _        XX       XX       XX       XX       XX       XX       XX       XX       XX       XX       XX       _        _
-  _        f1       f2       f3       f4       XX       0        1        2        3        XX       XX       _        _
-  _        f5       f6       f7       f8       XX       XX       4        5        6        XX       XX       _
-  f9       f10      f11      f12      XX       XX       XX       7        8        9        0        XX       _
+  _        f1       f2       f3       f4       XX       XX       1        2        3        XX       XX       _        _
+  _        f5       f6       f7       f8       XX       XX       4        5        6        0        XX       _
+           f9       f10      f11      f12      XX  XX   XX       7        8        9        XX       XX       _
   _        _        _        _                          _                          @sys     _        _        _        _
 )
 
 (deflayer sys
   _        f1       f2       f3       f4       f5       f6       f7       f8       f9       f10      f11      f12
   _        _        _        _        _        _        _        _        _        _        _        _        _        _
-  _        _        vold     mute     volu     _        _        _        _        _        _        _        _        _
-  _        _        ◀◀       ▶⏸       ▶▶       _        _        _        _        _        _        _        _
-  lrld     _        @colemak XX       @qwerty  _        _        _        _        _        _        _        _
+  @colemak _        _        _        _        _        _        _        _        _        _        _        _        _
+  @qwerty  _        vold     mute     volu     _        _        ◀◀       ▶⏸       ▶▶       _        _        _
+  lrld     _        _        _        _        _        _        _        _        _        _        _        _
   _        _        _        _                          _                          _        _        _        _        _
 )
 
