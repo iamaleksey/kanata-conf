@@ -20,12 +20,21 @@
   fn       lctl     lalt     lmet                       spc                        rmet     ralt     left     down     rght
 )
 
-(deflayer colemak
+(deflayer base
   _        brdn     brup     mctl     sls      dtn      dnd      ◀◀       ▶⏸       ▶▶       mute     vold     volu
   _        _        _        _        _        _        _        _        _        _        _        _        _        _
   _        q        w        f        p        b        j        l        u        y        ;        \        XX       XX
-  @esc_nav @ctl_a   @alt_r   @met_s   @sft_t   g        m        @sft_n   @met_e   @alt_i   @ctl_o   @'_sym   _
-           z        x        c        @hpr_d   v   XX   k        @hpr_h   _        _        _        @cw      _
+  @esc_nav @a       @r       @s       @t       g        m        @n       @e       @i       @o       @'_sym   _
+           z        x        c        @d       v   XX   k        @h       _        _        _        @capswrd _
+  _        _        _        @tab_num                   @spc_sym                   @bsp_nav _        _        _        _
+)
+
+(deflayer nomods
+  _        brdn     brup     mctl     sls      dtn      dnd      ◀◀       ▶⏸       ▶▶       mute     vold     volu
+  _        _        _        _        _        _        _        _        _        _        _        _        _        _
+  _        q        w        f        p        b        j        l        u        y        ;        \        XX       XX
+  @esc_nav a        r        s        t        g        m        n        e        i        o        @'_sym   _
+           z        x        c        d        v   XX   k        h        _        _        _        @capswrd _
   _        _        _        @tab_num                   @spc_sym                   @bsp_nav _        _        _        _
 )
 
@@ -59,7 +68,7 @@
 (deflayer sys
   _        f1       f2       f3       f4       f5       f6       f7       f8       f9       f10      f11      f12
   _        _        _        _        _        _        _        _        _        _        _        _        _        _
-  @colemak _        _        _        _        _        _        _        _        _        _        _        _        _
+  @base    _        _        _        _        _        _        _        _        _        _        _        _        _
   @qwerty  _        vold     mute     volu     _        _        ◀◀       ▶⏸       ▶▶       _        _        _
   lrld     _        _        _        _        _        _        _        _        _        _        _        _
   _        _        _        _                          _                          _        _        _        _        _
@@ -76,8 +85,8 @@
 
 (defalias
   ;; layers
-  colemak (layer-switch colemak)
-  qwerty  (layer-switch qwerty)
+  base   (layer-switch base)
+  qwerty (layer-switch qwerty)
 
   nav (layer-toggle nav)
   num (layer-toggle num)
@@ -111,28 +120,41 @@
 )
 
 (defalias
-  cw (caps-word 2000)
+  capswrd (caps-word 2000)
 
   lhpr (multi lctl lalt lmet lsft)
   rhpr (multi rctl ralt rmet rsft)
-  hpr_d (tap-hold-release $tt $ht d @lhpr)
-  hpr_h (tap-hold-release $tt $ht h @rhpr)
+  d (tap-hold-release $tt $ht d @lhpr)
+  h (tap-hold-release $tt $ht h @rhpr)
 
   ;; colemak-dh home row mods
-  ctl_a (tap-hold-release $tt $ht a lctl)
-  alt_r (tap-hold-release $tt $ht r lalt)
-  met_s (tap-hold-release $tt $ht s lmet)
-  sft_t (tap-hold-release $tt $ht t lsft)
+  a (tap-hold-release $tt $ht a lctl)
+  r (tap-hold-release $tt $ht r lalt)
+  s (tap-hold-release $tt $ht s lmet)
+  t (tap-hold-release $tt $ht t lsft)
 
-  sft_n (tap-hold-release $tt $ht n rsft)
-  met_e (tap-hold-release $tt $ht e rmet)
-  alt_i (tap-hold-release $tt $ht i ralt)
-  ctl_o (tap-hold-release $tt $ht o rctl)
+  n (tap-hold-release $tt $ht n rsft)
+  e (tap-hold-release $tt $ht e rmet)
+  i (tap-hold-release $tt $ht i ralt)
+  o (tap-hold-release $tt $ht o rctl)
 )
 
 (defvar
   tap-timeout  175
   hold-timeout 175
+
   tt $tap-timeout
   ht $hold-timeout
+
+  left-hand-keys (
+    q w f p b
+    a r s t g
+    z x c d v
+  )
+
+  right-hand-keys (
+    j l u y ;
+    m n e i o
+    k h , . /
+  )
 )
