@@ -22,7 +22,7 @@
 )
 
 (deflayer base
-  XX       brdn     brup     mctl     sls      dtn      dnd      XX       XX       XX       XX       XX       XX
+  XX       XX       XX       XX       XX       XX       XX       XX       XX       XX       XX       XX       XX
   XX       XX       XX       XX       XX       XX       XX       XX       XX       XX       XX       XX       XX       XX
   XX       q        w        f        p        b        j        l        u        y        ;        XX       XX       XX
   XX       @a       @r       @s       @t       @g       @m       @n       @e       @i       @o       ret      XX
@@ -31,7 +31,7 @@
 )
 
 (deflayer nomods
-  XX       brdn     brup     mctl     sls      dtn      dnd      XX       XX       XX       XX       XX       XX
+  XX       XX       XX       XX       XX       XX       XX       XX       XX       XX       XX       XX       XX
   XX       XX       XX       XX       XX       XX       XX       XX       XX       XX       XX       XX       XX       XX
   XX       q        w        f        p        b        j        l        u        y        ;        XX       XX       XX
   XX       a        r        s        t        g        m        n        e        i        o        ret      XX
@@ -67,11 +67,11 @@
 )
 
 (deflayer sys
-  _        f1       f2       f3       f4       f5       f6       f7       f8       f9       f10      f11      f12
+  _        _        _        _        _        _        _        _        _        _        _        _        _
   _        _        _        _        _        _        _        _        _        _        _        _        _        _
-  _        _        _        _        _        _        _        _        _        _        _        _        _        _
+  _        _        _        lrld     @qwerty  _        _        brdn     _        brup     _        _        _        _
   _        _        vold     mute     volu     _        _        ◀◀       ▶⏸       ▶▶       _        _        _
-           lrld     @base    _        @qwerty  _    _   _        brdn     _        brup     _        _        _
+           _        _        _        _        _    _   _        _        _        _        _        _        _
   _        _        _        _                          _                          _        _        _        _        _
 )
 
@@ -81,7 +81,16 @@
   _        _        _        _        _        _        _        _        _        _        _        _        _        _
   _        _        _        _        _        _        _        _        _        _        _        _        _
   _        _        _        _        _        _        _        _        _        _        _        _        _
-  @sys     _        _        _                          _                          _        _        _        _        _
+  @fn      _        _        _                          _                          _        _        _        _        _
+)
+
+(deflayer fn
+  _        f1       f2       f3       f4       f5       f6       f7       f8       f9       f10      f11      f12
+  _        _        _        _        _        _        _        _        _        _        _        _        _        _
+  _        _        @base    _        _        _        _        _        _        _        _        _        _        _
+  _        _        _        _        _        _        _        _        _        _        _        _        _
+  _        _        _        _        _        _        _        _        _        _        _        _        _
+  _        _        _        _                          _                          _        _        _        _        _
 )
 
 (defchordsv2
@@ -98,6 +107,7 @@
   num (layer-toggle num)
   sym (layer-toggle sym)
   sys (layer-toggle sys)
+  fn  (layer-toggle fn)
 
   spc_sym (tap-hold-press $tt $ht spc  @sym)
   tab_num (tap-hold-press $tt $ht tab  @num)
