@@ -51,27 +51,27 @@
 (deflayer nav
   _        _        _        _        _        _        _        _        _        _        _        _        _
   _        _        _        _        _        _        _        _        _        _        _        _        _        _
-  _        _        _        _        _        _        pgup     home     up       end      _        _        _        _
-  _        lctl     lalt     lmet     lsft     _        pgdn     left     down     rght     del      _        _
-           _        _        _        _        _    _   _        _        _        _        _        _        _
+  _        XX       XX       XX       XX       XX       pgup     home     up       end      XX       _        _        _
+  _        lctl     lalt     lmet     lsft     XX       pgdn     left     down     rght     del      _        _
+           XX       XX       XX       XX       XX   _   XX       XX       XX       XX       XX       _        _
   _        _        _        @sys                       _                          _        _        _        _        _
 )
 
 (deflayer num
   _        _        _        _        _        _        _        _        _        _        _        _        _
   _        _        _        _        _        _        _        _        _        _        _        _        _        _
-  _        f1       f2       f3       f4       XX       XX       1        2        3        _        _        _        _
+  _        f1       f2       f3       f4       XX       XX       1        2        3        XX       _        _        _
   _        f5       f6       f7       f8       XX       XX       4        5        6        0        _        _
-           f9       f10      f11      f12      XX   _   XX       7        8        9        _        _        _
+           f9       f10      f11      f12      XX   _   XX       7        8        9        XX       _        _
   _        _        _        _                          _                          @sys     _        _        _        _
 )
 
 (deflayer sys
   _        _        _        _        _        _        _        _        _        _        _        _        _
   _        _        _        _        _        _        _        _        _        _        _        _        _        _
-  _        _        _        lrld     @qwerty  _        _        brdn     _        brup     _        _        _        _
-  _        _        vold     mute     volu     _        _        ◀◀       ▶⏸       ▶▶       _        _        _
-           _        _        _        _        _    _   _        _        _        _        _        _        _
+  _        XX       XX       lrld     @qwerty  XX       XX       brdn     XX       brup     XX       _        _        _
+  _        XX       vold     mute     volu     XX       XX       ◀◀       ▶⏸       ▶▶       XX       _        _
+           XX       XX       XX       XX       XX   _   XX       XX       XX       XX       XX       _        _
   _        _        _        _                          _                          _        _        _        _        _
 )
 
