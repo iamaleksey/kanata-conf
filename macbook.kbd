@@ -25,8 +25,8 @@
   _        brdn     brup     mctl     sls      dtn      dnd      ◀◀       ▶⏸       ▶▶       mute     vold     volu
   _        _        _        _        _        _        _        _        _        _        _        _        _        _
   XX       q        w        f        p        b        j        l        u        y        ;        XX       XX       XX
-  XX       @a       @r       @s       @t       g        m        @n       @e       @i       @o       ret      XX
-           z        x        c        @d       v   XX   k        @h       ,        .        /        _        _
+  XX       @a       @r       @s       @t       @g       @m       @n       @e       @i       @o       ret      XX
+           z        x        c        d        v   XX   k        h        ,        .        /        _        _
   _        _        _        @tab_num                   @spc_sym                   @bsp_nav _        _        _        _
 )
 
@@ -127,15 +127,15 @@
   capswrd (caps-word 2000)
 
   hpr (multi lctl lalt lmet lsft)
-  d (tap-hold-release $tt $ht d @hpr)
-  h (tap-hold-release $tt $ht h @hpr)
 
   ;; colemak-dh home row mods
   a (tap-hold-release $tt $ht a lctl)
   r (tap-hold-release $tt $ht r lalt)
   s (tap-hold-release $tt $ht s lmet)
   t (tap-hold-release $tt $ht t lsft)
+  g (tap-hold-release $tt $ht g @hpr)
 
+  m (tap-hold-release $tt $ht m @hpr)
   n (tap-hold-release $tt $ht n rsft)
   e (tap-hold-release $tt $ht e rmet)
   i (tap-hold-release $tt $ht i ralt)
