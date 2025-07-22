@@ -25,8 +25,8 @@
   XX       XX       XX       XX       XX       XX       XX       XX       XX       XX       XX       XX       XX
   XX       XX       XX       XX       XX       XX       XX       XX       XX       XX       XX       XX       XX       XX
   XX       q        w        f        p        b        j        l        u        y        ;        XX       XX       XX
-  XX       @a       @r       @s       @t       @g       @m       @n       @e       @i       @o       ret      XX
-           z        x        c        d        v   XX   k        h        ,        .        /        XX       XX
+  XX       @a       @r       @s       @t       g        m        @n       @e       @i       @o       ret      XX
+           z        x        c        @d       v   XX   k        @h       ,        .        /        XX       XX
   XX       XX       XX       @tab_num                   @spc_sym                   @bsp_nav XX       XX       XX       XX
 )
 
@@ -143,9 +143,9 @@
   r (tap-hold-release $tt $ht r lalt)
   s (tap-hold-release $tt $ht s lmet)
   t (tap-hold-release $tt $ht t lsft)
-  g (tap-hold-release $tt $ht g @hpr)
+  d (tap-hold-release $tt $ht d @hpr)
 
-  m (tap-hold-release $tt $ht m @hpr)
+  h (tap-hold-release $tt $ht h @hpr)
   n (tap-hold-release $tt $ht n rsft)
   e (tap-hold-release $tt $ht e rmet)
   i (tap-hold-release $tt $ht i ralt)
