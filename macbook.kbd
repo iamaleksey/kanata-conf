@@ -22,7 +22,7 @@
 )
 
 (deflayer base
-  XX       XX       XX       XX       XX       XX       XX       XX       XX       XX       XX       XX       XX
+  XX       brdn     brup     XX       XX       XX       XX       XX       XX       XX       mute     vold     volu
   XX       XX       XX       XX       XX       XX       XX       XX       XX       XX       XX       XX       XX       XX
   XX       q        w        f        p        b        j        l        u        y        ;        XX       XX       XX
   XX       @a       @r       @s       @t       g        m        @n       @e       @i       @o       ret      XX
@@ -43,7 +43,7 @@
   _        _        _        _        _        _        _        _        _        _        _        _        _
   _        _        _        _        _        _        _        _        _        _        _        _        _        _
   _        @~       @^       @&       @|       XX       XX       @_       @!       @$       @@       _        _        _
-  _        +        @*       S-9      S-0      XX       XX       -        =        S-'      '        XX       _
+  _        @*       +        S-9      S-0      XX       XX       -        =        S-'      '        XX       _
            @#       @%       @{       @}       XX   _   XX       [        ]        `        \        _        _
   _        _        _        _                          _                          _        _        _        _        _
 )
