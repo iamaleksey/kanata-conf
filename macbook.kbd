@@ -12,6 +12,26 @@
   concurrent-tap-hold yes
 )
 
+(defvar
+  tap-timeout  175
+  hold-timeout 175
+
+  tt $tap-timeout
+  ht $hold-timeout
+
+  left-hand-keys (
+    q w f p b
+    a r s t g
+    z x c d v
+  )
+
+  right-hand-keys (
+    j l u y ;
+    m n e i o
+    k h , . /
+  )
+)
+
 (defsrc
   esc      f1       f2       f3       f4       f5       f6       f7       f8       f9       f10      f11      f12
   grv      1        2        3        4        5        6        7        8        9        0        -        =        bspc
@@ -93,6 +113,10 @@
   _        _        _        _                          _                          _        _        _        _        _
 )
 
+(deffakekeys
+  to-base (layer-switch base)
+)
+
 (defchordsv2
   (f j) esc      50 first-release ()
   (a ;) @capswrd 50 first-release ()
@@ -136,38 +160,23 @@
 (defalias
   capswrd (caps-word 2000)
 
+  tap (multi
+    (layer-switch nomods)
+    (on-idle-fakekey to-base tap 20)
+  )
+
   hpr (multi lctl lalt lmet lsft)
 
   ;; colemak-dh home row mods
-  a (tap-hold-release $tt $ht a lctl)
-  r (tap-hold-release $tt $ht r lalt)
-  s (tap-hold-release $tt $ht s lmet)
-  t (tap-hold-release $tt $ht t lsft)
-  d (tap-hold-release $tt $ht d @hpr)
+  a (tap-hold-release-keys $tt $ht (multi a @tap) lctl $left-hand-keys)
+  r (tap-hold-release-keys $tt $ht (multi r @tap) lalt $left-hand-keys)
+  s (tap-hold-release-keys $tt $ht (multi s @tap) lmet $left-hand-keys)
+  t (tap-hold-release-keys $tt $ht (multi t @tap) lsft $left-hand-keys)
+  d (tap-hold-release-keys $tt $ht (multi d @tap) @hpr $left-hand-keys)
 
-  h (tap-hold-release $tt $ht h @hpr)
-  n (tap-hold-release $tt $ht n rsft)
-  e (tap-hold-release $tt $ht e rmet)
-  i (tap-hold-release $tt $ht i ralt)
-  o (tap-hold-release $tt $ht o rctl)
-)
-
-(defvar
-  tap-timeout  175
-  hold-timeout 175
-
-  tt $tap-timeout
-  ht $hold-timeout
-
-  left-hand-keys (
-    q w f p b
-    a r s t g
-    z x c d v
-  )
-
-  right-hand-keys (
-    j l u y ;
-    m n e i o
-    k h , . /
-  )
+  h (tap-hold-release-keys $tt $ht (multi h @tap) @hpr $right-hand-keys)
+  n (tap-hold-release-keys $tt $ht (multi n @tap) rsft $right-hand-keys)
+  e (tap-hold-release-keys $tt $ht (multi e @tap) rmet $right-hand-keys)
+  i (tap-hold-release-keys $tt $ht (multi i @tap) ralt $right-hand-keys)
+  o (tap-hold-release-keys $tt $ht (multi o @tap) rctl $right-hand-keys)
 )
