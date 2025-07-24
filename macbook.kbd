@@ -94,7 +94,7 @@
 )
 
 (defchordsv2
-  (g h) esc      50 first-release ()
+  (f j) esc      50 first-release ()
   (a ;) @capswrd 50 first-release ()
 )
 
