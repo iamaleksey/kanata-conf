@@ -42,56 +42,56 @@
 )
 
 (deflayer base
-  XX       brdn     brup     XX       XX       XX       XX       XX       XX       XX       mute     vold     volu
-  XX       XX       XX       XX       XX       XX       XX       XX       XX       XX       XX       XX       XX       XX
-  XX       q        w        f        p        b        j        l        u        y        ;        XX       XX       XX
-  XX       @a       @r       @s       @t       g        m        @n       @e       @i       @o       ret      XX
-           z        x        c        @d       v   XX   k        @h       ,        .        /        XX       XX
-  XX       XX       XX       @tab_num                   @spc_sym                   @bsp_nav XX       XX       XX       XX
+  ✗        brdn     brup     ✗        ✗        ✗        ✗        ✗        ✗        ✗        mute     vold     volu
+  ✗        ✗        ✗        ✗        ✗        ✗        ✗        ✗        ✗        ✗        ✗        ✗        ✗        ✗
+  ✗        q        w        f        p        b        j        l        u        y        ;        ✗        ✗        ✗
+  ✗        @a       @r       @s       @t       g        m        @n       @e       @i       @o       ret      ✗
+           z        x        c        @d       v   ✗    k        @h       ,        .        /        ✗        ✗
+  ✗        ✗        ✗        @tab_num                   @spc_sym                   @bsp_nav ✗        ✗        ✗        ✗
 )
 
 (deflayer nomods
-  XX       XX       XX       XX       XX       XX       XX       XX       XX       XX       XX       XX       XX
-  XX       XX       XX       XX       XX       XX       XX       XX       XX       XX       XX       XX       XX       XX
-  XX       q        w        f        p        b        j        l        u        y        ;        XX       XX       XX
-  XX       a        r        s        t        g        m        n        e        i        o        ret      XX
-           z        x        c        d        v   XX   k        h        ,        .        /        XX       XX
-  XX       XX       XX       @tab_num                   @spc_sym                   @bsp_nav XX       XX       XX       XX
+  ✗        ✗        ✗        ✗        ✗        ✗        ✗        ✗        ✗        ✗        ✗        ✗        ✗
+  ✗        ✗        ✗        ✗        ✗        ✗        ✗        ✗        ✗        ✗        ✗        ✗        ✗        ✗
+  ✗        q        w        f        p        b        j        l        u        y        ;        ✗        ✗        ✗
+  ✗        a        r        s        t        g        m        n        e        i        o        ret      ✗
+           z        x        c        d        v   ✗    k        h        ,        .        /        ✗        ✗
+  ✗        ✗        ✗        @tab_num                   @spc_sym                   @bsp_nav ✗        ✗        ✗        ✗
 )
 
 (deflayer sym
   _        _        _        _        _        _        _        _        _        _        _        _        _
   _        _        _        _        _        _        _        _        _        _        _        _        _        _
-  _        @~       @^       @&       @|       XX       XX       @_       @!       @$       @@       _        _        _
-  _        @*       +        S-9      S-0      XX       XX       -        =        S-'      '        XX       _
-           @#       @%       @{       @}       XX   _   XX       [        ]        `        \        _        _
+  _        @~       @^       @&       @|       ✗        ✗        @_       @!       @$       @@       _        _        _
+  _        @*       +        S-9      S-0      ✗        ✗        -        =        S-'      '        ✗        _
+           @#       @%       @{       @}       ✗    _   ✗        [        ]        `        \        _        _
   _        _        _        _                          _                          _        _        _        _        _
 )
 
 (deflayer nav
   _        _        _        _        _        _        _        _        _        _        _        _        _
   _        _        _        _        _        _        _        _        _        _        _        _        _        _
-  _        XX       XX       XX       XX       XX       pgup     home     up       end      XX       _        _        _
-  _        lctl     lalt     lmet     lsft     XX       pgdn     left     down     rght     del      _        _
-           XX       XX       XX       XX       XX   _   XX       XX       XX       XX       XX       _        _
+  _        ✗        ✗        ✗        ✗        ✗        pgup     home     up       end      ✗        _        _        _
+  _        lctl     lalt     lmet     lsft     ✗        pgdn     left     down     rght     del      _        _
+           ✗        ✗        ✗        ✗        ✗    _   ✗        ✗        ✗        ✗        ✗        _        _
   _        _        _        @sys                       _                          _        _        _        _        _
 )
 
 (deflayer num
   _        _        _        _        _        _        _        _        _        _        _        _        _
   _        _        _        _        _        _        _        _        _        _        _        _        _        _
-  _        f1       f2       f3       f4       XX       XX       1        2        3        XX       _        _        _
-  _        f5       f6       f7       f8       XX       XX       4        5        6        0        _        _
-           f9       f10      f11      f12      XX   _   XX       7        8        9        XX       _        _
+  _        f1       f2       f3       f4       ✗        ✗        1        2        3        ✗        _        _        _
+  _        f5       f6       f7       f8       ✗        ✗        4        5        6        0        _        _
+           f9       f10      f11      f12      ✗    _   ✗        7        8        9        ✗        _        _
   _        _        _        _                          _                          @sys     _        _        _        _
 )
 
 (deflayer sys
   _        _        _        _        _        _        _        _        _        _        _        _        _
   _        _        _        _        _        _        _        _        _        _        _        _        _        _
-  _        XX       XX       lrld     @qwerty  XX       XX       brdn     XX       brup     XX       _        _        _
-  _        XX       vold     mute     volu     XX       XX       ◀◀       ▶⏸       ▶▶       XX       _        _
-           XX       XX       XX       XX       XX   _   XX       XX       XX       XX       XX       _        _
+  _        ✗        ✗        lrld     @qwerty  ✗        ✗        brdn     ✗        brup     ✗        _        _        _
+  _        ✗        vold     mute     volu     ✗        ✗        ◀◀       ▶⏸       ▶▶       ✗        _        _
+           ✗        ✗        ✗        ✗        ✗    _   ✗        ✗        ✗        ✗        ✗        _        _
   _        _        _        _                          _                          _        _        _        _        _
 )
 
