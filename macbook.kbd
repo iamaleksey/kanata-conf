@@ -42,7 +42,7 @@
 )
 
 (deflayer base
-  ✗        brdn     brup     ✗        ✗        ✗        ✗        ✗        ✗        ✗        mute     vold     volu
+  esc      brdn     brup     ✗        ✗        ✗        ✗        ✗        ✗        ✗        mute     vold     volu
   ✗        ✗        ✗        ✗        ✗        ✗        ✗        ✗        ✗        ✗        ✗        ✗        ✗        ✗
   ✗        q        w        f        p        b        j        l        u        y        ;        ✗        ✗        ✗
   ✗        @a       @r       @s       @t       g        m        @n       @e       @i       @o       ret      ✗
@@ -51,7 +51,7 @@
 )
 
 (deflayer nomods
-  ✗        ✗        ✗        ✗        ✗        ✗        ✗        ✗        ✗        ✗        ✗        ✗        ✗
+  esc      ✗        ✗        ✗        ✗        ✗        ✗        ✗        ✗        ✗        ✗        ✗        ✗
   ✗        ✗        ✗        ✗        ✗        ✗        ✗        ✗        ✗        ✗        ✗        ✗        ✗        ✗
   ✗        q        w        f        p        b        j        l        u        y        ;        ✗        ✗        ✗
   ✗        a        r        s        t        g        m        n        e        i        o        ret      ✗
