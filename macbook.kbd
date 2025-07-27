@@ -110,7 +110,10 @@
 
 (defchordsv2
   (w e)    esc      50 first-release ()
-  (a ;)    @capswrd 50 first-release ()
+  (x c)    tab      50 first-release ()
+  (i o)    bspc     50 first-release ()
+  (, .)    ret      50 first-release ()
+  (t y)    @capswrd 50 first-release ()
   (e r)    mute     50 first-release ()
   (lsft z) lrld     50 first-release ()
 )
