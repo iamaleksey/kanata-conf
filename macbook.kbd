@@ -45,18 +45,18 @@
   esc      brdn     brup     ✗        ✗        ✗        ✗        ✗        ✗        ✗        mute     vold     volu
   ✗        ✗        ✗        ✗        ✗        ✗        ✗        ✗        ✗        ✗        ✗        ✗        ✗        ✗
   ✗        q        w        f        p        b        j        l        u        y        ;        ✗        ✗        ✗
-  ✗        @a       @r       @s       @t       g        m        @n       @e       @i       @o       ret      ✗
+  ✗        @a       @r       @s       @t       g        m        @n       @e       @i       @o       ✗        ✗
            z        x        c        @d       v   ✗    k        @h       ,        .        /        ✗        ✗
-  ✗        ✗        ✗        @tab_num                   @spc_sym                   @bsp_nav ✗        ✗        ✗        ✗
+  ✗        ✗        ✗        @tab_num                   @spc_sym                   @ret_nav ✗        ✗        ✗        ✗
 )
 
 (deflayer nomods
   esc      ✗        ✗        ✗        ✗        ✗        ✗        ✗        ✗        ✗        ✗        ✗        ✗
   ✗        ✗        ✗        ✗        ✗        ✗        ✗        ✗        ✗        ✗        ✗        ✗        ✗        ✗
   ✗        q        w        f        p        b        j        l        u        y        ;        ✗        ✗        ✗
-  ✗        a        r        s        t        g        m        n        e        i        o        ret      ✗
+  ✗        a        r        s        t        g        m        n        e        i        o        ✗        ✗
            z        x        c        d        v   ✗    k        h        ,        .        /        ✗        ✗
-  ✗        ✗        ✗        @tab_num                   @spc_sym                   @bsp_nav ✗        ✗        ✗        ✗
+  ✗        ✗        ✗        @tab_num                   @spc_sym                   @ret_nav ✗        ✗        ✗        ✗
 )
 
 (deflayer sym
@@ -110,7 +110,7 @@
 
 (defchordsv2
   (w e)    esc      50 first-release ()
-  (x c)    tab      50 first-release ()
+  (z x)    tab      50 first-release ()
   (i o)    bspc     50 first-release ()
   (, .)    ret      50 first-release ()
   (t y)    @capswrd 50 first-release ()
@@ -128,9 +128,9 @@
   sym (layer-toggle sym)
   fn  (layer-toggle fn)
 
-  spc_sym (tap-hold-press $tt $ht spc  @sym)
-  tab_num (tap-hold-press $tt $ht tab  @num)
-  bsp_nav (tap-hold-press $tt $ht bspc @nav)
+  spc_sym (tap-hold-press $tt $ht spc @sym)
+  tab_num (tap-hold-press $tt $ht tab @num)
+  ret_nav (tap-hold-press $tt $ht ret @nav)
 )
 
 (defalias
