@@ -59,6 +59,15 @@
   ✗        ✗        ✗        @tab_num                   @spc_sym                   @ret_nav ✗        ✗        ✗        ✗
 )
 
+(deflayer num
+  _        _        _        _        _        _        _        _        _        _        _        _        _
+  _        _        _        _        _        _        _        _        _        _        _        _        _        _
+  _        f1       f2       f3       f4       ✗        ✗        1        2        3        ✗        _        _        _
+  _        f5       f6       f7       f8       ✗        ✗        4        5        6        0        _        _
+           f9       f10      f11      f12      ✗    _   ✗        7        8        9        ✗        _        _
+  _        _        _        _                          bspc                       _        _        _        _        _
+)
+
 (deflayer sym
   _        _        _        _        _        _        _        _        _        _        _        _        _
   _        _        _        _        _        _        _        _        _        _        _        _        _        _
@@ -74,15 +83,6 @@
   _        brdn     brup     vold     volu     ✗        pgup     home     up       end      ✗        _        _        _
   _        lctl     lalt     lmet     lsft     ✗        pgdn     left     down     rght     del      _        _
            @base    @qwerty  ✗        @hpr     ✗    _   ✗        ◀◀       ▶⏸       ▶▶       ✗        _        _
-  _        _        _        _                          _                          _        _        _        _        _
-)
-
-(deflayer num
-  _        _        _        _        _        _        _        _        _        _        _        _        _
-  _        _        _        _        _        _        _        _        _        _        _        _        _        _
-  _        f1       f2       f3       f4       ✗        ✗        1        2        3        ✗        _        _        _
-  _        f5       f6       f7       f8       ✗        ✗        4        5        6        0        _        _
-           f9       f10      f11      f12      ✗    _   ✗        7        8        9        ✗        _        _
   _        _        _        _                          _                          _        _        _        _        _
 )
 
