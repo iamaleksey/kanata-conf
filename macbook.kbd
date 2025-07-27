@@ -109,7 +109,7 @@
 )
 
 (defchordsv2
-  (f j)    esc      50 first-release ()
+  (w e)    esc      50 first-release ()
   (a ;)    @capswrd 50 first-release ()
   (e r)    mute     50 first-release ()
   (lsft z) lrld     50 first-release ()
