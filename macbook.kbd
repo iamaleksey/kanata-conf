@@ -46,8 +46,8 @@
   ✗        ✗        ✗        ✗        ✗        ✗        ✗        ✗        ✗        ✗        ✗        ✗        ✗        ✗
   ✗        q        w        f        p        b        j        l        u        y        ;        ✗        ✗        ✗
   ✗        @a       @r       @s       @t       g        m        @n       @e       @i       @o       ✗        ✗
-           z        x        c        @d       v   ✗    k        @h       ,        .        /        ✗        ✗
-  ✗        ✗        ✗        @tab_num                   @spc_sym                   @ret_nav ✗        ✗        ✗        ✗
+           z        x        c        @d       v   ✗    k        @h       ,        .        /        ✗        up
+  ✗        ✗        ✗        @tab_num                   @spc_sym                   @ret_nav ✗        left     down     rght
 )
 
 (deflayer nomods
@@ -55,8 +55,8 @@
   ✗        ✗        ✗        ✗        ✗        ✗        ✗        ✗        ✗        ✗        ✗        ✗        ✗        ✗
   ✗        q        w        f        p        b        j        l        u        y        ;        ✗        ✗        ✗
   ✗        a        r        s        t        g        m        n        e        i        o        ✗        ✗
-           z        x        c        d        v   ✗    k        h        ,        .        /        ✗        ✗
-  ✗        ✗        ✗        @tab_num                   @spc_sym                   @ret_nav ✗        ✗        ✗        ✗
+           z        x        c        d        v   ✗    k        h        ,        .        /        ✗        up
+  ✗        ✗        ✗        @tab_num                   @spc_sym                   @ret_nav ✗        left     down     rght
 )
 
 (deflayer num
@@ -64,7 +64,7 @@
   _        _        _        _        _        _        _        _        _        _        _        _        _        _
   _        f1       f2       f3       f4       ✗        ✗        1        2        3        ✗        _        _        _
   _        f5       f6       f7       f8       ✗        ✗        4        5        6        0        _        _
-           f9       f10      f11      f12      ✗    _   ✗        7        8        9        ✗        _        _
+           f9       f10      f11      f12      ✗   _    ✗        7        8        9        ✗        _        _
   _        _        _        _                          bspc                       _        _        _        _        _
 )
 
@@ -72,17 +72,17 @@
   _        _        _        _        _        _        _        _        _        _        _        _        _
   _        _        _        _        _        _        _        _        _        _        _        _        _        _
   _        @~       @^       @&       @|       ✗        ✗        @_       @!       @$       @@       _        _        _
-  _        @*       +        S-9      S-0      ✗        ✗        -        =        S-'      '        ✗        _
-           @#       @%       @{       @}       ✗    _   ✗        [        ]        `        \        _        _
+  _        @*       +        S-9      S-0      ✗        ✗        -        =        S-'      '        _        _
+           @#       @%       @{       @}       ✗   _    ✗        [        ]        `        \        _        _
   _        _        _        _                          _                          _        _        _        _        _
 )
 
 (deflayer nav
   _        _        _        _        _        _        _        _        _        _        _        _        _
   _        _        _        _        _        _        _        _        _        _        _        _        _        _
-  _        brdn     brup     vold     volu     ✗        pgup     home     up       end      ✗        _        _        _
-  _        lctl     lalt     lmet     lsft     ✗        pgdn     left     down     rght     del      _        _
-           @base    @qwerty  ✗        @hpr     ✗    _   ✗        ◀◀       ▶⏸       ▶▶       ✗        _        _
+  _        brdn     brup     vold     volu     ✗        pgup     home     up       end      del      _        _        _
+  _        lctl     lalt     lmet     lsft     ✗        pgdn     left     down     rght     bspc     _        _
+           @base    @qwerty  ✗        @hpr     ✗   _    ✗        ◀◀       ▶⏸       ▶▶       ✗        _        _
   _        _        _        _                          _                          _        _        _        _        _
 )
 
