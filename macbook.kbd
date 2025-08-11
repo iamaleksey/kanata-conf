@@ -110,10 +110,13 @@
 
 (defchordsv2
   (w e)    esc      75 first-release ()
-  (i o)    bspc     75 first-release ()
   (z x)    @capswrd 75 first-release ()
   (e r)    mute     75 first-release ()
   (lsft z) lrld     75 first-release ()
+  (i o)    bspc     75 first-release ()
+  (a i o)  C-bspc   75 first-release ()
+  (s i o)  A-bspc   75 first-release ()
+  (d i o)  M-bspc   75 first-release ()
 )
 
 (defalias
