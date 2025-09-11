@@ -111,9 +111,7 @@
 
 (defchordsv2
   (w e)    esc      75 first-release ()
-  (i o)    bspc     75 first-release ()
-  (z x)    @capswrd 75 first-release ()
-  (, .)    ret      75 first-release ()
+  (i o)    @capswrd 75 first-release ()
   (e r)    mute     75 first-release ()
   (lsft z) lrld     75 first-release ()
 )
