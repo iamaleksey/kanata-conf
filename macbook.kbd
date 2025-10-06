@@ -83,7 +83,7 @@
   _        _        _        _        _        _        _        _        _        _        _        _        _        _
   _        brdn     brup     vold     volu     ✗        pgup     home     up       end      del      _        _        _
   _        lctl     lalt     lmet     lsft     ✗        pgdn     left     down     rght     bspc     _        _
-           @base    @qwerty  ✗        @hpr     ✗   _    ✗        ◀◀       ▶⏸       ▶▶       ✗        _        _
+           @base    @qwerty  ✗        @meh     ✗   _    ✗        ◀◀       ▶⏸       ▶▶       ✗        _        _
   _        _        _        _                          _                          _        _        _        _        _
 )
 
@@ -162,16 +162,16 @@
     (on-idle-fakekey to-base tap 20)
   )
 
-  hpr (multi lctl lalt lmet lsft)
+  meh (multi lctl lalt lsft)
 
   ;; colemak-dh home row mods
   a (tap-hold-release-keys $tt $ht (multi a @tap) lctl $left-hand-keys)
   r (tap-hold-release-keys $tt $ht (multi r @tap) lalt $left-hand-keys)
   s (tap-hold-release-keys $tt $ht (multi s @tap) lmet $left-hand-keys)
   t (tap-hold-release-keys $tt $ht (multi t @tap) lsft $left-hand-keys)
-  d (tap-hold-release-keys $tt $ht (multi d @tap) @hpr $left-hand-keys)
+  d (tap-hold-release-keys $tt $ht (multi d @tap) @meh $left-hand-keys)
 
-  h (tap-hold-release-keys $tt $ht (multi h @tap) @hpr $right-hand-keys)
+  h (tap-hold-release-keys $tt $ht (multi h @tap) @meh $right-hand-keys)
   n (tap-hold-release-keys $tt $ht (multi n @tap) rsft $right-hand-keys)
   e (tap-hold-release-keys $tt $ht (multi e @tap) rmet $right-hand-keys)
   i (tap-hold-release-keys $tt $ht (multi i @tap) ralt $right-hand-keys)
